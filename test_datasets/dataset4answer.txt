@@ -1,0 +1,4 @@
+venezuelan_trajectories <- ggplot(venezuelan_liquid_trajectories, aes(x=time, y=F2, group = phoneme, colour = phoneme)) + 
+geom_smooth(method = "gam") + 
+geom_point()
+print(venezuelan_trajectories)
